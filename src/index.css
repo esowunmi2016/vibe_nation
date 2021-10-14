@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace, ;
+}
+
+.fa-spotify:hover {
+  /* Use your color here (!important will force it to use this color for any FA elements */
+color: #1DB954 !important;
+}
+
+
+.fa-apple:hover {
+  /* Use your color here (!important will force it to use this color for any FA elements */
+color: #A3AAAE !important;
+}
+
+
+.fa-soundcloud:hover {
+  /* Use your color here (!important will force it to use this color for any FA elements */
+color: #FE5000 !important;
+}
+
