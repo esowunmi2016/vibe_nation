@@ -25,6 +25,8 @@ export default class Message extends react.Component{
         .then((response) => {
             // console.log('SUCCESS!', response.status, response.text);
             this.setState({ messageLoading:false  });
+            var form = document.getElementById("myForm");
+            form.reset();
             message.success('SENT')
         }, (err) => {
             // console.log('FAILED...', err);
@@ -41,7 +43,7 @@ export default class Message extends react.Component{
                         Send a Message
                     </h4>
                 </div>
-                <Form onFinish={this.onFinish}>
+                <Form onFinish={this.onFinish} id='myForm'>
                     <div className='container-fluid py-4 px-4'>
                         <div className='row'>
                             <div className='col-md-12 col-lg-6'>
@@ -60,7 +62,7 @@ export default class Message extends react.Component{
                             </div>
                             <div className='col-6'>
 
-                                <Form.Item name='email' rules={[{required:true}]}>
+                                <Form.Item name='email' rules={[{type:'email'}]}>
                                     <Input />
                                 </Form.Item>
                             </div>
